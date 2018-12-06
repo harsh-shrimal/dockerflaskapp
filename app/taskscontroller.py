@@ -6,10 +6,6 @@ tasks = [
             {
                 "id": 1,
                 "title": "Groceries"
-            },
-            {
-                "id": 3,
-                "title": "Bills"
             }
         ]
 
