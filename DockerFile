@@ -1,0 +1,8 @@
+# Docker image with uWSGI and Nginx for Flask web applications in Python 3.7
+FROM tiangolo/uwsgi-nginx-flask:python3.7
+
+# Indicate where uwsgi.ini lives
+ENV UWSGI_INI uwsgi.ini
+
+# Copy all files from current local directory (directory containing this DockerFile) to the specified absolute path in docker image
+ADD . /app
