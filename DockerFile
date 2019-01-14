@@ -1,6 +1,13 @@
 # Docker image with uWSGI and Nginx for Flask web applications in Python 3.7
 FROM tiangolo/uwsgi-nginx-flask:python3.7
 
+# Instruct NGINX to listen on port 5000
+ENV LISTEN_PORT 5000
+
+# This is documentation only instruction.
+# This inforws Azure Web App the port that the container will be listening on.
+EXPOSE 5000
+
 # Indicate where uwsgi.ini lives
 ENV UWSGI_INI uwsgi.ini
 
