@@ -9,7 +9,7 @@ tasks = [
             },
             {
                 "id": 2,
-                "title": "Laundry"
+                "title": "Movies"
             }
         ]
 
